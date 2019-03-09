@@ -1,0 +1,24 @@
+
+service: demo-rest-apis # NOTE: update this with your service name
+
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+
+functions:
+  app:
+    handler: server.run
+    events:
+      - http:
+          path: /
+          method: ANY
+          cors: false
+      - http:
+          path: /{proxy+}
+          method: ANY
+          cors: false
+
+plugins:
+  - serverless-offline
+
