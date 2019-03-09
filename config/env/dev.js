@@ -7,7 +7,7 @@ module.exports =  {
   },
   db: {
       mongodb: {
-          uri:'mongodb://hah-dev:hahdev5@ds151523.mlab.com:51523/hah-dev', 
+          uri:'mongodb://demouser:demo55@ds241395.mlab.com:41395/phoenix', 
           options: {
               user: '',
               pass: ''
